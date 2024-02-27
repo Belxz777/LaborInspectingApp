@@ -17,7 +17,7 @@ class Task(models.Model):
 
 
 class Users(models.Model):
-    job_title_id = models.ForeignKey(JobTitle, on_delete=models.PROTECT)
+    job_title_id = models.CharField(max_length=800)
     age = models.IntegerField(default=0)
     first_name = models.CharField(max_length=800)
     last_name = models.CharField(max_length=800)
